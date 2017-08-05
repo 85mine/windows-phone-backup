@@ -1,0 +1,317 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="GameXepHinh.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="800"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="False">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot"
+          MouseLeftButtonUp="mouseLeftButtonUp"
+        Background="Black"  >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Margin="28,199,10,121" Grid.RowSpan="2">
+            <MediaElement x:Name="myAudio" Margin="721,366,-721,-366" />
+            <!--MediaEnded="myAudio_MediaEnded"-->
+
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="30,0,0,509"  Name="q1_0" Stroke="Black" StrokeThickness="1" VerticalAlignment="Bottom" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="30,99,0,0" Name="q2_0" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="30,109,0,0" Name="q3_0" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="30,119,0,0" Name="q4_0" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="30,129,0,0" Name="q5_0" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="30,139,0,0" Name="q6_0" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="40,79,0,0" Name="q0_1" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="40,89,0,0" Name="q1_1" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="40,99,0,0" Name="q2_1" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="40,109,0,0" Name="q3_1" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="40,119,0,0" Name="q4_1" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="40,129,0,0" Name="q5_1" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="40,139,0,0" Name="q6_1" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="40,149,0,0" Name="q7_1" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="50,79,0,0" Name="q0_2" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="50,89,0,0" Name="q1_2" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="50,99,0,0" Name="q2_2" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="50,109,0,0" Name="q3_2" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="50,119,0,0" Name="q4_2" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="50,129,0,0" Name="q5_2" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="50,139,0,0" Name="q6_2" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="50,149,0,0" Name="q7_2" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="60,79,0,0" Name="q0_3" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="60,89,0,0" Name="q1_3" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="60,139,0,0" Name="q6_3" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="60,149,0,0" Name="q7_3" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="70,79,0,0" Name="q0_4" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="70,89,0,0" Name="q1_4" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="70,139,0,0" Name="q6_4" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="70,149,0,0" Name="q7_4" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="80,79,0,0" Name="q0_5" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="80,89,0,0" Name="q1_5" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="80,99,0,0" Name="q2_5" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="80,109,0,0" Name="q3_5" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="80,119,0,0" Name="q4_5" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="80,129,0,0" Name="q5_5" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="80,139,0,0" Name="q6_5" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="80,149,0,0" Name="q7_5" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="80,159,0,0" Name="q8_5" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="80,169,0,0" Name="q9_5" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="80,179,0,0" Name="q10_5" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="80,189,0,0" Name="q11_5" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="80,199,0,0" Name="q12_5" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="80,209,0,0" Name="q13_5" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="80,219,0,0" Name="q14_5" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="80,229,0,0" Name="q15_5" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="80,239,0,0" Name="q16_5" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="90,89,0,0" Name="q1_6" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="90,99,0,0" Name="q2_6" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="90,109,0,0" Name="q3_6" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="90,119,0,0" Name="q4_6" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="90,129,0,0" Name="q5_6" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="90,139,0,0" Name="q6_6" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="90,149,0,0" Name="q7_6" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="90,159,0,0" Name="q8_6" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="90,169,0,0" Name="q9_6" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="90,179,0,0" Name="q10_6" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="90,189,0,0" Name="q11_6" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="90,199,0,0" Name="q12_6" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="90,209,0,0" Name="q13_6" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="90,219,0,0" Name="q14_6" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="90,229,0,0" Name="q15_6" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="90,239,0,0" Name="q16_6" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="100,79,0,0" Name="q0_7" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="100,89,0,0" Name="q1_7" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="100,99,0,0" Name="q2_7" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="100,109,0,0" Name="q3_7" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="100,119,0,0" Name="q4_7" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="100,129,0,0" Name="q5_7" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="100,139,0,0" Name="q6_7" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="100,149,0,0" Name="q7_7" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="100,159,0,0" Name="q8_7" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="100,169,0,0" Name="q9_7" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="100,179,0,0" Name="q10_7" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="100,189,0,0" Name="q11_7" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="100,199,0,0" Name="q12_7" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="100,209,0,0" Name="q13_7" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="100,219,0,0" Name="q14_7" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="100,229,0,0" Name="q15_7" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="100,239,0,0" Name="q16_7" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="110,79,0,0" Name="q0_8" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="110,89,0,0" Name="q1_8" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="110,139,0,0" Name="q6_8" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="110,149,0,0" Name="q7_8" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="110,219,0,0" Name="q14_8" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="110,229,0,0" Name="q15_8" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="120,79,0,0" Name="q0_9" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="120,89,0,0" Name="q1_9" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="120,139,0,0" Name="q6_9" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="120,149,0,0" Name="q7_9" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="130,79,0,0" Name="q0_10" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="130,89,0,0" Name="q1_10" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="130,99,0,0" Name="q2_10" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="130,109,0,0" Name="q3_10" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="130,119,0,0" Name="q4_10" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="130,129,0,0" Name="q5_10" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="130,139,0,0" Name="q6_10" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="130,149,0,0" Name="q7_10" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="140,79,0,0" Name="q0_11" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="140,89,0,0" Name="q1_11" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="140,99,0,0" Name="q2_11" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="140,109,0,0" Name="q3_11" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="140,119,0,0" Name="q4_11" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="140,129,0,0" Name="q5_11" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="140,139,0,0" Name="q6_11" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="140,149,0,0" Name="q7_11" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="150,89,0,0" Name="q1_12" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="150,99,0,0" Name="q2_12" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="150,109,0,0" Name="q3_12" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="150,119,0,0" Name="q4_12" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="150,129,0,0" Name="q5_12" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="150,139,0,0" Name="q6_12" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="180,69,0,0" Name="l20" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="180,59,0,0" Name="l10" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="180,49,0,0" Name="l00" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="180,79,0,0" Name="l30" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="180,89,0,0" Name="l40" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="180,99,0,0" Name="l50" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="180,109,0,0" Name="l60" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="180,119,0,0" Name="l70" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="180,129,0,0" Name="l80" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="180,139,0,0" Name="l90" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="180,149,0,0" Name="l100" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+
+
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="190,69,0,0" Name="l21" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="190,59,0,0" Name="l11" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="190,49,0,0" Name="l01" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="190,79,0,0" Name="l31" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="190,89,0,0" Name="l41" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="190,99,0,0" Name="l51" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="190,109,0,0" Name="l61" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="190,119,0,0" Name="l71" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="190,129,0,0" Name="l81" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="190,139,0,0" Name="l91" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="190,149,0,0" Name="l101" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+
+
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="200,69,0,0" Name="l22" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="200,59,0,0" Name="l12" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="200,49,0,0" Name="l02" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="200,79,0,0" Name="l32" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="200,89,0,0" Name="l42" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="200,99,0,0" Name="l52" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="200,109,0,0" Name="l62" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="200,119,0,0" Name="l72" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="200,129,0,0" Name="l82" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="200,139,0,0" Name="l92" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="200,149,0,0" Name="l102" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="250,119,0,479" Name="a4_0" Stroke="#FF004B00" StrokeThickness="1" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="250,129,0,0" Name="a5_0" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="250,139,0,0" Name="a6_0" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="240,89,0,0" Name="a1_1" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="240,109,0,0" Name="a3_1" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="240,119,0,0" Name="a4_1" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="240,129,0,0" Name="a5_1" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="240,139,0,0" Name="a6_1" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="240,149,0,0" Name="a7_1" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="250,79,0,0" Name="a0_2" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="250,89,0,0" Name="a1_2" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="250,109,0,0" Name="a3_2" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="250,119,0,0" Name="a4_2" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="250,139,0,0" Name="a6_2" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="250,149,0,0" Name="a7_2" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="260,79,0,0" Name="a0_3" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="260,89,0,0" Name="a1_3" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="260,109,0,0" Name="a3_3" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="260,119,0,0" Name="a4_3" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="260,139,0,0" Name="a6_3" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="260,149,0,0" Name="a7_3" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="270,79,0,0" Name="a0_4" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="270,89,0,0" Name="a1_4" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="270,109,0,0" Name="a3_4" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="270,119,0,0" Name="a4_4" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="270,139,0,0" Name="a6_4" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="270,149,0,0" Name="a7_4" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="280,79,0,0" Name="a0_5" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="280,89,0,0" Name="a1_5" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="280,99,0,0" Name="a2_5" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="280,109,0,0" Name="a3_5" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="280,119,0,0" Name="a4_5" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="280,129,0,0" Name="a5_5" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="280,139,0,0" Name="a6_5" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="280,149,0,0" Name="a7_5" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="290,79,0,0" Name="a0_6" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="290,89,0,0" Name="a1_6" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="290,99,0,0" Name="a2_6" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="290,109,0,0" Name="a3_6" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="290,119,0,0" Name="a4_6" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="290,129,0,0" Name="a5_6" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="290,139,0,0" Name="a6_6" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="290,149,0,0" Name="a7_6" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="300,89,0,0" Name="a1_7" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="300,99,0,0" Name="a2_7" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="300,109,0,0" Name="a3_7" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="300,119,0,0" Name="a4_7" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="300,129,0,0" Name="a5_7" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="300,139,0,0" Name="a6_7" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="300,149,0,0" Name="a7_7" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="330,79,0,0" Name="y0_0" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="330,89,0,0" Name="y1_0" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="330,99,0,0" Name="y2_0" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="330,109,0,0" Name="y3_0" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="330,119,0,0" Name="y4_0" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="330,129,0,0" Name="y5_0" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="330,139,0,0" Name="y6_0" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="340,79,0,0" Name="y0_1" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="340,89,0,0" Name="y1_1" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="340,99,0,0" Name="y2_1" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="340,109,0,0" Name="y3_1" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="340,119,0,0" Name="y4_1" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="340,129,0,0" Name="y5_1" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="340,139,0,0" Name="y6_1" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="340,149,0,0" Name="y7_1" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="350,79,0,0" Name="y0_2" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="350,89,0,0" Name="y1_2" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="350,99,0,0" Name="y2_2" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="350,109,0,0" Name="y3_2" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="350,119,0,0" Name="y4_2" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="350,129,0,0" Name="y5_2" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="350,139,0,0" Name="y6_2" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="350,149,0,0" Name="y7_2" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="360,129,0,0" Name="y5_3" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="360,139,0,0" Name="y6_3" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="360,149,0,0" Name="y7_3" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="360,199,0,0" Name="y12_3" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="370,129,0,0" Name="y5_4" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="370,139,0,0" Name="y6_4" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="370,189,0,0" Name="y11_4" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="370,199,0,0" Name="y12_4" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+
+
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="380,79,0,0" Name="y0_5" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="380,89,0,0" Name="y1_5" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="380,99,0,0" Name="y2_5" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="380,109,0,0" Name="y3_5" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="380,119,0,0" Name="y4_5" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="380,129,0,0" Name="y5_5" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="380,139,0,0" Name="y6_5" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="380,149,0,0" Name="y7_5" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="380,159,0,0" Name="y8_5" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="380,169,0,0" Name="y9_5" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="380,179,0,0" Name="y10_5" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="380,189,0,0" Name="y11_5" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="380,199,0,0" Name="y12_5" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="390,79,0,0" Name="y0_6" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="390,89,0,0" Name="y1_6" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="390,99,0,0" Name="y2_6" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="390,109,0,0" Name="y3_6" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="390,119,0,0" Name="y4_6" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="390,129,0,0" Name="y5_6" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="390,139,0,0" Name="y6_6" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="390,149,0,0" Name="y7_6" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="390,159,0,0" Name="y8_6" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="390,169,0,0" Name="y9_6" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="390,179,0,0" Name="y10_6" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="390,189,0,0" Name="y11_6" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="400,79,0,0" Name="y0_7" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="400,89,0,0" Name="y1_7" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="400,99,0,0" Name="y2_7" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="400,109,0,0" Name="y3_7" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="400,119,0,0" Name="y4_7" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="400,129,0,0" Name="y5_7" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="400,139,0,0" Name="y6_7" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="400,149,0,0" Name="y7_7" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="400,159,0,0" Name="y8_7" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="400,169,0,0" Name="y9_7" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <Rectangle Fill="#FFFFFF05" Height="9" HorizontalAlignment="Left" Margin="400,179,0,0" Name="y10_7" Stroke="#FF004B00" StrokeThickness="1" VerticalAlignment="Top" Width="8" />
+            <TextBlock Height="43" HorizontalAlignment="Left" Margin="90,285,0,-76" 
+                       Name="textBlock1" Text="http://www.sunnet.vn" VerticalAlignment="Top" Width="286" FontSize="28" Foreground="#FFEEEE0F" />
+        </Grid>
+    </Grid>
+</phone:PhoneApplicationPage>

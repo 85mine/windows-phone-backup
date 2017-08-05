@@ -1,0 +1,9 @@
+﻿http://amobi.vn/index/widget-wp?device_type=3
+&device_model=
+&os_version=
+&widget_size=1
+&widget_type=1
+&screen_size=
+&session_id=noId
+&widget_code=10e6dfa400f2b15c6d23e1ed7ab8af5a
+&category=1

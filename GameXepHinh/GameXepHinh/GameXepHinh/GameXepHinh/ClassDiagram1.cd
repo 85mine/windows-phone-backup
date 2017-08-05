@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GameXepHinh.App" Collapsed="true">
+    <Position X="18.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gQQgAQAIAgAAhAFAAAAAAAAAAAAAEQAAAAAAAIIAAAQ=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameXepHinh.AppServiceProvider" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKAAAEQ=</HashCode>
+      <FileName>AppServiceProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GameXepHinh.DiemCao" Collapsed="true">
+    <Position X="25.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAQACAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>DiemCao.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameXepHinh.GamePage" Collapsed="true">
+    <Position X="18.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgQEYkIAJIAAUQACREDAQgQQAAAAgQQBAAAgRQEEIAA=</HashCode>
+      <FileName>GamePage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameXepHinh.Hinhnen" Collapsed="true">
+    <Position X="22.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>Jo0EQlIgohGAgoShLoUAJmQQQAEwAQEQAAADBCQwCBQ=</HashCode>
+      <FileName>Hinhnen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameXepHinh.MainPage" Collapsed="true">
+    <Position X="20.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAQAgABAAAAAQAgAAAABAAAIBACAAAAIA=</HashCode>
+      <FileName>MainPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameXepHinh.Menu" Collapsed="true">
+    <Position X="22.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQEMoIcJKAAUQECBAiAAgQAAAAAgAQAAIEgAQAAAAQ=</HashCode>
+      <FileName>Menu.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameXepHinh.Score" Collapsed="true">
+    <Position X="24" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAIAAAAAgAAAAAAAAAQAAAAEAAAAAAgAAAQAEAQ=</HashCode>
+      <FileName>Score.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameXepHinh.Controller.Check_Muakhoi" Collapsed="true">
+    <Position X="22.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAA4AEAAAAAEAA=</HashCode>
+      <FileName>Controller\Check_Muakhoi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameXepHinh.Controller.CheckNote" Collapsed="true">
+    <Position X="24" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAICAAAAAAEAAAAAAAAAAAAoABAAEAAAA=</HashCode>
+      <FileName>Controller\CheckNote.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameXepHinh.Controller.Khoitao" Collapsed="true">
+    <Position X="25.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAASAAAgAAAAAGAAAAACAAAAAAIAAAgAAAAABA=</HashCode>
+      <FileName>Controller\Khoitao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameXepHinh.Controller.Update_Matrix" Collapsed="true">
+    <Position X="18.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAwEQAAATAAAIgWhLgDAhiYRBEYAQcAwAEABSQC4HCQ=</HashCode>
+      <FileName>Controller\Update_Matrix.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NapThe.Controller" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAABAAAAAIAAAABAAAAAAAAAAAAgAE=</HashCode>
+      <FileName>NapThe\Controller.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NapThe.GamePageNapThe" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAQAACAAgAAAAAAAByAAAAAAAAAAAQAIAIAAAAAAAAA=</HashCode>
+      <FileName>NapThe\GamePageNapThe.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="NapThe.Khac" Collapsed="true">
+    <Position X="24" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgBAAAAAAAAAAEAAAAAAAAQAIAAAAAAEAAAA=</HashCode>
+      <FileName>NapThe\Khac.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NapThe.KhongDuXu" Collapsed="true">
+    <Position X="18.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAgAAAABAAAAAAEAiAAQAAAQAAAAEAAAABAAA=</HashCode>
+      <FileName>NapThe\KhongDuXu.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NapThe.NapTheDienThoai" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="24" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAICiggAAASAAAAAEAAACAIiQQAIAIAgABlBAIA=</HashCode>
+      <FileName>NapThe\NapTheDienThoai.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="NapThe.NapTheDienThoaiController" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kUAAAAEAQAAgAADQAAAAACIAgCAAAAEAEBEQAAgAIAA=</HashCode>
+      <FileName>NapThe\NapTheDienThoaiController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NapThe.NapTheDienThoaiModel" Collapsed="true">
+    <Position X="25.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NapThe\NapTheDienThoaiModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NapThe.NapTheQplay" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAgAAAiAAAAACAACAAEAAACAACQQBJAIAABBlBAIg=</HashCode>
+      <FileName>NapThe\NapTheQplay.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="NapThe.NapTheQuaTangController" Collapsed="true">
+    <Position X="16.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EEAAAAAAAgAACABAEAAAAAoAAAAAAAEAEBAAAAAAIAA=</HashCode>
+      <FileName>NapThe\NapTheQuaTangController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NapThe.NapXu" Collapsed="true">
+    <Position X="20.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEgQABgAABAAAAABAAECABIAAAgAAAAABAAAAACBA=</HashCode>
+      <FileName>NapThe\NapXu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NapThe.Report" Collapsed="true">
+    <Position X="22.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQABAAAAgAAAAAAAAAAAAAQAAAAAAQAAAIAAAAAAAAA=</HashCode>
+      <FileName>NapThe\Report.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NapThe.ServiceController" Collapsed="true">
+    <Position X="8.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAIABAAgAARgAABAAAAQAIDABAAAAgIAA=</HashCode>
+      <FileName>NapThe\ServiceController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NapThe.ServiceP0" Collapsed="true">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>NapThe\ServiceController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NapThe.ServiceP1" Collapsed="true">
+    <Position X="9.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>NapThe\ServiceController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NapThe.ServiceP2" Collapsed="true">
+    <Position X="11.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>NapThe\ServiceController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NapThe.Service00" Collapsed="true">
+    <Position X="14" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>NapThe\ServiceController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NapThe.Service01" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>NapThe\ServiceController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NapThe.Service02" Collapsed="true">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>NapThe\ServiceController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NapThe.SMSModel" Collapsed="true">
+    <Position X="25.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NapThe\SMSModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="NapThe.INapTheDienThoai" Collapsed="true">
+    <Position X="18.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAICgggAAAAAAAAAAAAACAAAAAAAAAAAABBAAAA=</HashCode>
+      <FileName>NapThe\INapTheDienThoai.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="NapThe.INapTheQuaTang" Collapsed="true">
+    <Position X="20.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAgAAAAAAAAAAAAAAACAAAAABAAAAAABBAAAg=</HashCode>
+      <FileName>NapThe\INapTheQuaTang.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

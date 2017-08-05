@@ -1,0 +1,105 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:es="clr-namespace:Microsoft.Expression.Shapes;assembly=Microsoft.Expression.Drawing" x:Class="STOP_Music.Controls.ClearHistory"
+    mc:Ignorable="d"
+    d:DesignHeight="821" d:DesignWidth="480" Loaded="UserControl_Loaded">
+    
+	<UserControl.Resources>
+		<Storyboard x:Name="ClearHistoryStoryboard" AutoReverse="False">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)" Storyboard.TargetName="ClearHistoryGrid">
+				<SplineDoubleKeyFrame KeyTime="0" Value="180"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="ClearHistoryGrid">
+				<SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.5" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="ClearHistoryGrid">
+				<DiscreteObjectKeyFrame KeyTime="0">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+				<DiscreteObjectKeyFrame KeyTime="0:0:0.5">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+			</ObjectAnimationUsingKeyFrames>
+			<DoubleAnimation Duration="0:0:0.5" To="0.995" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Grid" d:IsOptimized="True"/>
+			<ColorAnimation Duration="0:0:0.5" To="White" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="PercentCirBack" d:IsOptimized="True"/>
+		</Storyboard>
+		<Storyboard x:Name="processDoneStoryboard">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="ProcessdDone">
+				<EasingDoubleKeyFrame KeyTime="0" Value="600"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="199"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="ProcessdDone">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0.5"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="ProcessdDone">
+				<DiscreteObjectKeyFrame KeyTime="0">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+				<DiscreteObjectKeyFrame KeyTime="0:0:0.5">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+			</ObjectAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)" Storyboard.TargetName="ProcessdDone">
+				<EasingDoubleKeyFrame KeyTime="0" Value="180"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="180"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+	</UserControl.Resources>
+	<UserControl.FontFamily>
+		<StaticResource ResourceKey="PhoneFontFamilyNormal"/>
+	</UserControl.FontFamily>
+	<UserControl.FontSize>
+		<StaticResource ResourceKey="PhoneFontSizeNormal"/>
+	</UserControl.FontSize>
+	<UserControl.Foreground>
+		<StaticResource ResourceKey="PhoneForegroundBrush"/>
+	</UserControl.Foreground>
+    
+	<Grid x:Name="LayoutRoot">
+		<Grid.Background>
+			<ImageBrush Stretch="UniformToFill" ImageSource="/Resources/Images/Parallax.png"/>
+		</Grid.Background>
+
+		<Grid x:Name="ClearHistoryGrid" Background="{x:Null}">
+			<Grid.Projection>
+				<PlaneProjection/>
+			</Grid.Projection>
+			<Grid x:Name="Grid">
+				<Grid.Background>
+					<ImageBrush Stretch="UniformToFill" ImageSource="/Resources/Images/Sunset.jpg"/>
+				</Grid.Background>
+			</Grid>
+			<Grid x:Name="ClearhistoryHeader" Height="100" VerticalAlignment="Top">
+				<Grid Background="White" Opacity="0.08"/>
+				<TextBlock x:Name="ClearHeader" HorizontalAlignment="Left" TextWrapping="Wrap" Text="CLEAR HISTORY" VerticalAlignment="Center" FontFamily="/STOP Music;component/Resources/Fonts/Fonts.zip#.Helvetica Light" FontSize="48" Margin="20,0,0,0" FontWeight="Bold"/>
+			</Grid>
+			<Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+				<es:Arc x:Name="PercentCirBack" ArcThickness="310" ArcThicknessUnit="Pixel" EndAngle="360" Fill="White" HorizontalAlignment="Center" Height="400" Stretch="None" Stroke="Black" UseLayoutRounding="False" VerticalAlignment="Center" Width="400" StrokeThickness="0" Opacity="0.15"/>
+				<es:Arc x:Name="PercentCir" ArcThickness="20" ArcThicknessUnit="Pixel" EndAngle="0" Fill="#FFFFDC00" HorizontalAlignment="Center" Height="400" Stretch="None" Stroke="Black" UseLayoutRounding="False" VerticalAlignment="Center" Width="400" StrokeThickness="0"/>
+				<Image x:Name="ProcessdDone" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Resources/Images/ok.png" Width="199" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+					<Image.Projection>
+						<PlaneProjection/>
+					</Image.Projection>
+					<Image.RenderTransform>
+						<CompositeTransform ScaleX="-1"/>
+					</Image.RenderTransform>
+				</Image>
+			</Grid>
+		</Grid>
+
+	</Grid>
+</UserControl>

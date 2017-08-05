@@ -1,0 +1,149 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:telerikPrimitives="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Primitives"
+    xmlns:ToggleSwitch="clr-namespace:Telerik.Windows.Controls.ToggleSwitch;assembly=Telerik.Windows.Controls.Primitives"
+    x:Class="Quick_Controls_V2.Views.Settings"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True"
+	shell:SystemTray.Opacity="0">
+
+	<phone:PhoneApplicationPage.Resources>
+		<Style x:Key="HeaderedContentControlHeaderStyle" TargetType="ContentControl">
+			<Setter Property="Foreground" Value="{StaticResource PhoneSubtleBrush}"/>
+			<Setter Property="FontSize" Value="{StaticResource PhoneFontSizeNormal}"/>
+			<Setter Property="HorizontalAlignment" Value="Left"/>
+		</Style>
+		<Style x:Key="ToggleSwitchHeaderStyle" BasedOn="{StaticResource HeaderedContentControlHeaderStyle}" TargetType="ContentControl"/>
+		<Style x:Key="FlashLightModeStyle" TargetType="telerikPrimitives:RadToggleSwitch">
+			<Setter Property="HeaderStyle" Value="{StaticResource ToggleSwitchHeaderStyle}"/>
+			<Setter Property="HorizontalAlignment" Value="Stretch"/>
+			<Setter Property="VerticalAlignment" Value="Top"/>
+			<Setter Property="HorizontalContentAlignment" Value="Left"/>
+			<Setter Property="VerticalContentAlignment" Value="Bottom"/>
+			<Setter Property="Margin" Value="{StaticResource PhoneTouchTargetOverhang}"/>
+			<Setter Property="FontSize" Value="{StaticResource PhoneFontSizeLarge}"/>
+			<Setter Property="FontFamily" Value="{StaticResource PhoneFontFamilySemiLight}"/>
+			<Setter Property="UseOptimizedManipulationRouting" Value="False"/>
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="telerikPrimitives:RadToggleSwitch">
+						<Grid x:Name="LayoutRoot">
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="*"/>
+								<ColumnDefinition Width="Auto"/>
+							</Grid.ColumnDefinitions>
+							<Grid.RowDefinitions>
+								<RowDefinition Height="Auto"/>
+								<RowDefinition Height="Auto"/>
+							</Grid.RowDefinitions>
+							<VisualStateManager.VisualStateGroups>
+								<VisualStateGroup x:Name="CommonStates">
+									<VisualState x:Name="Normal"/>
+									<VisualState x:Name="Disabled">
+										<Storyboard>
+											<ObjectAnimationUsingKeyFrames Duration="0" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="LayoutRoot">
+												<DiscreteObjectKeyFrame KeyTime="0" Value="0.3"/>
+											</ObjectAnimationUsingKeyFrames>
+										</Storyboard>
+									</VisualState>
+								</VisualStateGroup>
+							</VisualStateManager.VisualStateGroups>
+							<ContentControl Grid.ColumnSpan="2" ContentTemplate="{TemplateBinding HeaderTemplate}" Content="{TemplateBinding Header}" Grid.Row="0" Style="{TemplateBinding HeaderStyle}" Foreground="#FF7B7B7B"/>
+							<ContentPresenter ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" Grid.Row="1" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+							<ToggleSwitch:ToggleSwitchButton x:Name="PART_Switch" Grid.Column="1" Grid.Row="1" Style="{TemplateBinding ButtonStyle}" Foreground="White" ThumbBackground="White" BorderBrush="White" Background="#FF1C2228"/>
+						</Grid>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+		<Style x:Key="AutoCloseModeStyle" TargetType="telerikPrimitives:RadToggleSwitch">
+			<Setter Property="HeaderStyle" Value="{StaticResource ToggleSwitchHeaderStyle}"/>
+			<Setter Property="HorizontalAlignment" Value="Stretch"/>
+			<Setter Property="VerticalAlignment" Value="Top"/>
+			<Setter Property="HorizontalContentAlignment" Value="Left"/>
+			<Setter Property="VerticalContentAlignment" Value="Bottom"/>
+			<Setter Property="Margin" Value="{StaticResource PhoneTouchTargetOverhang}"/>
+			<Setter Property="FontSize" Value="{StaticResource PhoneFontSizeLarge}"/>
+			<Setter Property="FontFamily" Value="{StaticResource PhoneFontFamilySemiLight}"/>
+			<Setter Property="UseOptimizedManipulationRouting" Value="False"/>
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="telerikPrimitives:RadToggleSwitch">
+						<Grid x:Name="LayoutRoot">
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="*"/>
+								<ColumnDefinition Width="Auto"/>
+							</Grid.ColumnDefinitions>
+							<Grid.RowDefinitions>
+								<RowDefinition Height="Auto"/>
+								<RowDefinition Height="Auto"/>
+							</Grid.RowDefinitions>
+							<VisualStateManager.VisualStateGroups>
+								<VisualStateGroup x:Name="CommonStates">
+									<VisualState x:Name="Normal"/>
+									<VisualState x:Name="Disabled">
+										<Storyboard>
+											<ObjectAnimationUsingKeyFrames Duration="0" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="LayoutRoot">
+												<DiscreteObjectKeyFrame KeyTime="0" Value="0.3"/>
+											</ObjectAnimationUsingKeyFrames>
+										</Storyboard>
+									</VisualState>
+								</VisualStateGroup>
+							</VisualStateManager.VisualStateGroups>
+							<ContentControl Grid.ColumnSpan="2" ContentTemplate="{TemplateBinding HeaderTemplate}" Content="{TemplateBinding Header}" Grid.Row="0" Style="{TemplateBinding HeaderStyle}" Foreground="#FF7B7B7B"/>
+							<ContentPresenter ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" Grid.Row="1" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+							<ToggleSwitch:ToggleSwitchButton x:Name="PART_Switch" Grid.Column="1" Grid.Row="1" Style="{TemplateBinding ButtonStyle}" ThumbBackground="White" Foreground="White" BorderBrush="White" Background="#FF1C2228"/>
+						</Grid>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+	</phone:PhoneApplicationPage.Resources>
+	<phone:PhoneApplicationPage.FontFamily>
+		<StaticResource ResourceKey="PhoneFontFamilyNormal"/>
+	</phone:PhoneApplicationPage.FontFamily>
+	<phone:PhoneApplicationPage.FontSize>
+		<StaticResource ResourceKey="PhoneFontSizeNormal"/>
+	</phone:PhoneApplicationPage.FontSize>
+	<phone:PhoneApplicationPage.Foreground>
+		<StaticResource ResourceKey="PhoneForegroundBrush"/>
+	</phone:PhoneApplicationPage.Foreground>
+
+	<Grid x:Name="LayoutRoot" Background="#FF1C2228">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="*" />
+		</Grid.RowDefinitions>
+
+		<!--ContentPanel - place additional content here-->
+
+		<!--TitlePanel contains the name of the application and page title-->
+		<StackPanel Grid.Row="0" Margin="12,17,0,28">
+			<TextBlock Text="{Binding LocalizedResources.TextSettings, Source={StaticResource LocalizedStrings}}" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"
+				Foreground="#FF7B7B7B" />
+		</StackPanel>
+		<StackPanel Grid.Row="1">
+
+			<telerikPrimitives:RadToggleSwitch Header="{Binding LocalizedResources.TextFlashlightMode, Source={StaticResource LocalizedStrings}}"
+				x:Name="FlashLightMode" VerticalAlignment="Stretch"
+				Content="{Binding LocalizedResources.TextFlashlightModeDetail, Source={StaticResource LocalizedStrings}}" FontSize="18.667"
+				Tap="FlashLightMode_Tap" Foreground="White" Style="{StaticResource FlashLightModeStyle}" />
+			<telerikPrimitives:RadToggleSwitch Header="{Binding LocalizedResources.TextAutocloseMode, Source={StaticResource LocalizedStrings}}"
+				x:Name="AutoCloseMode" VerticalAlignment="Stretch"
+				Content="{Binding LocalizedResources.TextAutocloseModeDetail, Source={StaticResource LocalizedStrings}}" FontSize="18.667"
+				Tap="AutoCloseMode_Tap" Foreground="White" Style="{StaticResource AutoCloseModeStyle}" />
+			<Button x:Name="PinVolume" Content="{Binding LocalizedResources.TextPinVolume, Source={StaticResource LocalizedStrings}}" Height="70" BorderThickness="1"
+				FontFamily="Segoe WP Light" Click="PinVolume_Click" BorderBrush="White" Foreground="White" />
+			<TextBlock x:Name="GiveMeRate" TextWrapping="Wrap" Text="{Binding LocalizedResources.TextGiveMeRate, Source={StaticResource LocalizedStrings}}" FontFamily="Segoe WP Light" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,50,0,0" Foreground="White"/>
+
+		</StackPanel>
+
+	</Grid>
+
+</phone:PhoneApplicationPage>

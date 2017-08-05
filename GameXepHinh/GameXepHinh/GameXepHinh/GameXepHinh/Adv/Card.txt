@@ -1,0 +1,6 @@
+﻿http://sl23.sunkhoai.com:8080/SunPayGateURL/?iss=
+&serial=
+&code=
+&des=WPA1 XHX96UW
+&user=winphone
+&pass=winphone_sn2012
